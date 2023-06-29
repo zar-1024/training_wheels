@@ -1,3 +1,22 @@
 
 MyScreenManager:
     MainScreen:
+
+<MainScreen>:
+    text_input: text_input
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 4
+        spacing: 4
+        Label:
+            text: 'Welcome to my Youtube/Facebook downloader!'
+            font_size: 40
+        TextInput:
+            id: text_input
+            hint_text: 'paste your Facebook/Youtube video link here'
+            font_size: 30
+        Button:
+            text: 'Download'
+            font_size: 30
+            on_release:
+                root.download()
